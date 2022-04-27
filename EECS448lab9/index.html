@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My EECS448Lab9 Webpage</title>
+
+  <p> This is my Lab9 webpage, Use the menu button to go through my lab9 exercises. </p>
+  <style>
+  .button {
+    background-color: yellow;
+    padding: 100px;
+    font-size: 50px;
+  }
+
+  .list {
+    position: relative;
+    display: inline-block;
+  }
+
+  .list-content {
+    display: none;
+    position: absolute;
+  }
+
+  .list-content a {
+    color: black;
+    padding: 20px 25px;
+    display: block;
+  }
+
+  .list:hover
+  .list-content {display: block;}
+</style>
+
+
+</head>
+<body>
+  <div class="list">
+  <button class="button">Menu</button>
+  <div class="list-content">
+    <a href="ex1/multiplication.php">Ex1 multiplication table</a>
+    <a href="ex2/quiz.html">Ex2 quiz</a>
+    <a href="ex3/index.html">Ex3 web store</a>
+
+  </div>
+  </div>
+</body>
+</html>

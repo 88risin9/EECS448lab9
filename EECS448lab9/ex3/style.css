@@ -1,0 +1,64 @@
+
+td
+{
+        text-align: center;
+}
+
+th
+{
+    font-size: 20pt;
+}
+
+table
+{
+    width: 70%;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+.shipping
+{
+    width: 70%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.receipt, tr.receipt, td.receipt, th.receipt
+{
+  border: 2px solid black;
+}
+
+.receipt.number
+{
+  background-color: white;
+}
+
+.receipt.text
+{
+  background-color: white;
+}
+
+.receipt.total
+{
+  background-color: white;
+  font-weight: bolder;
+}

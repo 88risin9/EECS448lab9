@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+    <body>
+    
+        <form action="customerBackend.php" onsubmit="return verify()" method="post">
+            <h1>Food Store</h1>
+                <p>
+                    Username: <input type="email" id="uName" name="uName"><br>
+                    Password: <input type="password" id="pWord" name="pWord">
+                </p>
+
+            <h2>Menu</h2>
+                <table class="Plants">
+
+                    <tr>
+                        <td>
+                            Taco<br>
+                            Price: $5.00<br>
+                            Enter Quantity: <input type="number" id="tacoQuantity" name="tacoQuantity"><br>
+                        </td>
+                        <td>
+                            
+                            Hot Dog<br>
+                            Price: $6.00<br>
+                            Enter Quantity: <input type="number" id="hotDogQuantity" name="hotDogQuantity"><br>
+                        </td>
+                        <td>
+                            
+                            Burger<br>
+                            Price: $9.00<br>
+                            Enter Quantity: <input type="number" id="burgerQuantity" name="burgerQuantity"><br>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <table class="shipping">
+                    <h3>Shipping Option</h3>
+                    <tr>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td>7 Day</td>
+                        <td>$0</td>
+                        <td><input type="radio" id="7day" name="ship" value="7 Day"></td>
+                    </tr>
+                    <tr>
+                        <td>3 Day</td>
+                        <td>$5.00</td>
+                        <td><input type="radio" id="3day" name="ship" value="3 Day"></td>
+                    </tr>
+                    <tr>
+                        <td>Overnight</td>
+                        <td>$50.00</td>
+                        <td><input type="radio" id="overnight" name="ship" value="Overnight"></td>
+                    </tr>
+                </table>
+                
+                <p>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </p>
+        </form>
+    </body>
+</html>
